@@ -19,7 +19,7 @@ export async function POST(request: Request) {
     // Send to institute
     await transporter.sendMail({
       from: process.env.SMTP_FROM,
-      to: "admissions@stgabriel.edu", // Replace with actual email
+      to: "admissions@stgabrieltech.com",
       subject: "New Application Submission",
       text: `New application from ${data.fullName}\nEmail: ${data.email}\nPhone: ${data.phone}\nProgram: ${data.program}\nEducation: ${data.educationLevel}`,
     });
